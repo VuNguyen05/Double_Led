@@ -1,15 +1,12 @@
 #include <Arduino.h>
-#include "LED.h"       // Thư viện tự viết điều khiển LED (trong include/)
-#include "OneButton.h" // Thư viện xử lý nút bấm
-
-// Định nghĩa các chân cắm phần cứng
+#include "LED.h"       
+#include "OneButton.h" 
 #define LED1_PIN 25  
 #define LED2_PIN 5  
 #define BTN_PIN 23  
 
 #define LED_ACTIVE_LEVEL HIGH
 
-// Khởi tạo 2 đối tượng LED
 LED led1(LED1_PIN, LED_ACTIVE_LEVEL);
 LED led2(LED2_PIN, LED_ACTIVE_LEVEL);
 
